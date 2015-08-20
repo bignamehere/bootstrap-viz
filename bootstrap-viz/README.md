@@ -23,6 +23,12 @@ You can [download the latest release](https://github.com/bignamehere/bootstrap-v
 
 For more detailed use on the bootstrap-viz framework, check out the [documentation](http://bignamehere.github.io/bootstrap-viz).
 
+### Usage:
+
+```html
+
+<div id="vizHolderID" class="viz" data-width="980px" data-height="900px" data-hidetabs="true" data-hidetoolbar="true" data-url="https://public.tableau.com/views/TravelFun/TravelFun"></div>
+
 ### Example Usage with Bootstrap 3:
 
 ```html
