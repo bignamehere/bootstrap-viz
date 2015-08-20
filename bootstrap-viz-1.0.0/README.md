@@ -6,6 +6,8 @@ A [Bootstrap](http://getbootstrap.com) add-on that integrates Tableau visualizat
 
 The bootstrap-viz add-on allows for quick HTML updates to any web-based project that utilizes a Tableau visualization. The purpose of the add-on is to allow non-developers and Data Visualization professionals the ability to quickly integrate their visualization content into a web project without having to know JavaScript or working directly with the Tableau JavaScript API. The advantage of combining this add-on with the bootstrap framework is that it give the Data Visualization professional a way to show a viz in a mobile friendly and easy to configure way.
 
+View an example of [bootstrap-viz](http://www.bignamehere.com/bootstrap-viz/example/index.html).
+
 **Version:** 1.0.0
 
 ## Requirements
@@ -21,7 +23,7 @@ You can [download the latest release](https://github.com/bignamehere/bootstrap-v
 
 ## Installing
 
-For more detailed use on the bootstrap-viz framework, check out the [documentation](http://bignamehere.github.io/bootstrap-viz).
+Installation is as simple as adding the versioned directory (eg. bootstrap-viz-1.0.0) into the root of your project or where you would normally store your other 3rd party libraries.
 
 ### Usage & data parameters available:
 
