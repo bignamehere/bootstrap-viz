@@ -28,6 +28,7 @@ For more detailed use on the bootstrap-viz framework, check out the [documentati
 ```html
 
 <div id="vizHolderID" class="viz" data-width="980px" data-height="900px" data-hidetabs="true" data-hidetoolbar="true" data-url="https://public.tableau.com/views/TravelFun/TravelFun"></div>
+```
 
 ### Example Usage with Bootstrap 3:
 
