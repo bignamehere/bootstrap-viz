@@ -21,96 +21,57 @@ You can [download the latest release](https://github.com/bignamehere/bootstrap-v
 
 ## Installing
 
-For more detailed use on the bootstrap-drawer framework, check out the [documentation](http://bignamehere.github.io/bootstrap-viz).
+For more detailed use on the bootstrap-viz framework, check out the [documentation](http://bignamehere.github.io/bootstrap-viz).
 
-### When using the full Bootstrap Framework:
+### Example Usage with Bootstrap 3:
 
 ```html
-<html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="YOUR_OTHER_STYLES.css">
+        <title>Bootstrap-Viz Example</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="YOUR_STYLES_HERE.css">
     </head>
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
-                    <h1>Visualization Header</h1>
+                <div class="panel col-xs-12">
+                    <h1>Time I have spent in an Automobile</h1>
                 </div>
-                <div class="col-xs-12 col-md-4">
+                <div class="hidden-xs hidden-sm hidden-md visible-lg col-lg-12">
                     <!-- Viz Content -->
-                    <div id="vizHolder1" class="viz" data-width="320px" data-height="320px" data-hidetabs="true" data-hidetoolbar="false" data-url="https://public.tableau.com/views/1854CholeraOutbreak-SnowsMap/CholeraAnalysis"></div>
+                    <div id="vizHolder1" class="viz" data-width="980px" data-height="900px" data-hidetabs="true" data-hidetoolbar="true" data-url="https://public.tableau.com/views/TravelFun/TravelFun"></div>
+                    <!-- /Viz Content -->
+                </div>            
+                <div class="col-xs-12 col-sm-6 col-lg-4 visible-xs visible-sm visible-md hidden-lg">
+                    <h3>US States I Have Visited</h3>
+                    <!-- Viz Content -->
+                    <div id="vizHolder2" class="viz" data-width="360px" data-height="400px" data-hidetabs="true" data-hidetoolbar="true" data-url="https://public.tableau.com/views/TravelFun/PlacesTraveled"></div>
                     <!-- /Viz Content -->
                 </div>
-                <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-lg-4 visible-xs visible-sm visible-md hidden-lg">
+                    <h3>Conversations in the Car</h3>
                     <!-- Viz Content -->
-                    <div id="vizHolder2" class="viz" data-width="320px" data-height="320px" data-hidetabs="true" data-hidetoolbar="false" data-url="https://public.tableau.com/shared/B62T9TDK6"></div>
+                    <div id="vizHolder3" class="viz" data-width="360px" data-height="400px" data-hidetabs="true" data-hidetoolbar="true" data-url="https://public.tableau.com/views/TravelFun/BoysConversations"></div>
                     <!-- /Viz Content -->
                 </div>
-                <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-lg-4 visible-xs visible-sm visible-md hidden-lg">
+                    <h3>Years of Travel Via Car</h3>
                     <!-- Viz Content -->
-                    <div id="vizHolder3" class="viz" data-width="320px" data-height="320px" data-hidetabs="true" data-hidetoolbar="true" data-url="https://public.tableau.com/shared/C57NGTQYH"></div>
+                    <div id="vizHolder4" class="viz" data-width="360px" data-height="400px" data-hidetabs="true" data-hidetoolbar="true" data-url="https://public.tableau.com/views/TravelFun/YearTraveled"></div>
                     <!-- /Viz Content -->
                 </div>
             </div>
         </div>
         
-        <script src="jquery.min.js"></script>
-        <script src="bootstrap.min.js"></script>
-        <script src="bootstrap-viz.min.js"></script>
-        <script src="YOUR_CUSTOM_JS.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.0.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap-viz.js"></script>
     </body>
 </html>
 ```
 
-### Basic Usage
-
-You can check out [example/index.html](example/index.html) for a more robust example,
-but the basic usage is very similar to using Bootstrap's col-SIZE-# classes, when it comes
-to sizing the component.  In addition, the inner elements (`.drawer-heading`, `-nav/-navfull`,
- `-body`, `-footer`) are similar to how the `.panel` class family works.
-
- The `.fold` class starts the drawer closed.  Becomes `.fold.open` when it's opened.
-
- The sizing classes are dictated by the screen size to be responsive.  `.dw-SIZE-12` will cover
- the whole screen/canvas of that size.  If you want to use the drawer in another container
- instead of the `<body>`, check out [the full documentation](http://clineamb.github.io/bootstrap-drawer).
-
-```html
-<body class="has-drawer"> <!-- add this class to your body for proper sizing -->
-    <div id="drawerExample" class="drawer dw-xs-10 dw-sm-6 dw-md-4 fold" aria-labelledby="drawerExample">
-        <div class="drawer-controls">
-            <a href="#drawerExample" data-toggle="drawer" href="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" class="btn btn-primary btn-sm">Menu</a>
-        </div>
-        <div class="drawer-contents">
-            <div class="drawer-heading">
-                <h2 class="drawer-title">Menu</h2>
-            </div>
-            <div class="drawer-body">
-                <p>
-                    This is a properly padded container for content in the
-                    drawer that isn't a navigation.
-                </p>
-                <a href="#">A Regular Link</a>
-            </div>
-            <ul class="drawer-nav">
-                <li role="presentation" class="active"><a href="#">Home</a></li>
-                <li role="presentation"><a href="#">Profile</a></li>
-                <li role="presentation"><a href="#">Messages</a></li>
-            </ul>
-            <div class="drawer-footer">
-                <small>&copy; Caroline Amaba</small>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <!-- content as per usual -->
-    </div>
-</body>
-```
-## Latest Changelog
-
-[Check out the full changelog](changelog.md) for past version changes.
 
 #### Version 1.0.0
 
