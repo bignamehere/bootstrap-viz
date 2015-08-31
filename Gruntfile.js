@@ -30,7 +30,7 @@ module.exports = function (grunt) {
         
     });
 
-    grunt.registerTask('default', ['uglify'] );
+    grunt.registerTask('default', ['concat','uglify'] );
     grunt.registerTask('runConcat', ['concat']);
     grunt.registerTask('runWatch', ['watch']);
 

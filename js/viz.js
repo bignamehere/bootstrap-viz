@@ -33,8 +33,8 @@ var Viz = function(){
     function createViz( vizObject ){
         vizObj.holder = document.getElementById( String( vizObject.holder ) );
         vizObj.url  = String( vizObject.url );
-        vizObj.options.hideTabs = String( vizObject.hideTabs );
-        vizObj.options.hideToolbar = String( vizObject.hideToolbar );
+        vizObj.options.hideTabs = vizObject.hideTabs;
+        vizObj.options.hideToolbar = vizObject.hideToolbar;
         vizObj.options.width = String( vizObject.width );
         vizObj.options.height = String( vizObject.height );
         
