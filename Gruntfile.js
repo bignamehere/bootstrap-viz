@@ -10,14 +10,14 @@ module.exports = function (grunt) {
         concat: {
             dist: {
                 src: 'js/*.js',
-                dest: 'bootstrap-viz-1.0.0/js/bootstrap-viz.js'
+                dest: 'bootstrap-viz-1.0.1/js/bootstrap-viz.js'
             }
         },
         
         uglify: {
             build: {
-                src: 'bootstrap-viz-1.0.0/js/bootstrap-viz.js',
-                dest: 'bootstrap-viz-1.0.0/js/bootstrap-viz.min.js'
+                src: 'bootstrap-viz-1.0.1/js/bootstrap-viz.js',
+                dest: 'bootstrap-viz-1.0.1/js/bootstrap-viz.min.js'
             }
         },
         

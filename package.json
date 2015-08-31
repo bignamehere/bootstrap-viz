@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-viz",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Bootstrap 3 Add-on to help integrate with Tableau JS API",
   "main": "index.js",
   "scripts": {

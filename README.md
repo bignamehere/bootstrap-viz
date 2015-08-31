@@ -8,7 +8,7 @@ The bootstrap-viz add-on allows for quick HTML updates to any web-based project 
 
 View an example of [bootstrap-viz](http://www.bignamehere.com/bootstrap-viz/example/index.html).
 
-**Version:** 1.0.0
+**Version:** 1.0.1
 
 ## Requirements
 
@@ -111,7 +111,7 @@ Installation is as simple as adding the versioned directory (eg. bootstrap-viz-1
 ```
 
 
-#### Version 1.0.0
+#### Version 1.0.1
 
 * Begot bootstrap-viz.
 
